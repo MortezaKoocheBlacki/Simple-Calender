@@ -4,11 +4,16 @@
 }
 :root{
     --main-fonts: Signika;
+    --background-color: #2D7BD8;
+    --white-color: #FFF;
+    --Highlighting-Color: #8843E4;
+    --hoverColor: #404AFA;
 }
 *, *::after, *::before{
     box-sizing: border-box;
     padding: 0; margin: 0;
     list-style: none;
+    transition: 0.3s ease;
 }
 body{
     min-height: 100vh;
@@ -16,4 +21,53 @@ body{
     justify-content: center;
     align-items: center;
     font-family: var(--main-fonts);
+    background: var(--background-color);
+}
+
+.wrapper{
+    width: 450px;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.wrapper .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 10px;
+    font-size: 24px;
+}
+
+.header .icons .leftArrow{
+    cursor: pointer;
+    width: 30px; height: 30px;
+    padding: 3px 0px 0px 6.5px;
+    border-radius: 50%;
+}
+
+.header .icons .rightArrow{
+    cursor: pointer;
+    width: 30px; height: 30px;
+    padding: 3px 0px 0px 8px;
+    border-radius: 50%;
+}
+
+.header .icons .rightArrow:hover,
+.header .icons .leftArrow:hover{
+    background: var(--hoverColor);
+    color: #FFF;
+}
+
+.wrapper .calender{
+    padding: 20px;
+}
+
+.calender ul{
+    display: flex;
+    text-align: center;
+}
+
+.calender ul li{
+    position: relative;
+    width: calc(100% / 7);
 }
