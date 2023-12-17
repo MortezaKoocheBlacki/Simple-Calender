@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Signika;
+    src: url(../Fonts/Signika.ttf);
+}
+:root{
+    --main-fonts: Signika;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-fonts);
+}
