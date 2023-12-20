@@ -41,7 +41,6 @@ prevNextIcon.forEach(icon => {
 
         // if clicked icon is previous icon then decrement current month by 1 else increment it by 1.
         currentMonth = icon.id === 'prev' ? currentMonth - 1 : currentMonth + 1;
-        console.log(currentMonth);
 
         if(currentMonth < 0 || currentMonth > 11){
             // creating a new date of current year & month and pass it as date value
